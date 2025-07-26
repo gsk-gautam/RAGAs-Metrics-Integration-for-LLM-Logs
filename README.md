@@ -38,7 +38,7 @@ The goal is to compute RAGAs scores for each entry and export the results in a c
 |--------|---------|
 | `json` | Read/write structured data |
 | `random` | Generate simulated scores |
-| *(Optional)* `ragas` | For real metric computation (not used in current simulation) |
+| `ragas` | For real metric computation (not used in current simulation) |
 
 ---
 
@@ -62,8 +62,7 @@ ragas-metrics-integration/
 │
 ├── logs.json                    # Input data
 ├── ragas_scores_output.json     # Output with computed RAGAs metrics
-├── ragas_metric_simulator.py    # Main processing script
-├── RAGAs_Metrics_Colab.ipynb    # Optional notebook version
+├── RAGAs_integration.ipynb    # Notebook version
 └── README.md                    # This file
 ```
 
@@ -83,7 +82,7 @@ Make sure `logs.json` is in the root directory.
 
 ### ▶️ Run in Google Colab
 
-- Open [`RAGAs_Metrics_Colab.ipynb`](https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID) (replace with actual link)
+- Open [`RAGAs_Metrics_Colab.ipynb`](https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID)
 - Upload your `logs.json` file
 - Run the notebook cells to compute and save the output
 
@@ -109,11 +108,5 @@ Make sure `logs.json` is in the root directory.
 - Replace random scoring with real LLM-based evaluation (e.g., `ragas`, `bertscore`, `GPT4 judge`)
 - Add dashboards to visualize metric distributions
 - Support batch evaluation and error handling for malformed entries
-
----
-
-## 📄 License
-
-This project is for educational and internal evaluation purposes. You are free to adapt and extend it for your specific use case.
 
 ---
