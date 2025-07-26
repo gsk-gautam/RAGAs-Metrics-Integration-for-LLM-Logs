@@ -62,7 +62,7 @@ ragas-metrics-integration/
 │
 ├── logs.json                    # Input data
 ├── ragas_scores_output.json     # Output with computed RAGAs metrics
-├── RAGAs_integration.ipynb    # Notebook version
+├── RAGAs_integration.ipynb      # Notebook version
 └── README.md                    # This file
 ```
 
@@ -82,7 +82,7 @@ Make sure `logs.json` is in the root directory.
 
 ### ▶️ Run in Google Colab
 
-- Open [`RAGAs_Metrics_Colab.ipynb`](https://colab.research.google.com/drive/YOUR_NOTEBOOK_ID)
+- Open [`RAGAs_Metrics_Colab.ipynb`](https://github.com/gsk-gautam/RAGAs-Metrics-Integration-for-LLM-Logs/blob/main/ragas-integration.ipynb)
 - Upload your `logs.json` file
 - Run the notebook cells to compute and save the output
 
